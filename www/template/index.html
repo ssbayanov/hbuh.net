@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title><?=$pagetitle?></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="/scripts/main.js"></script>
+<link rel="stylesheet" href="/css/main.css" type="text/css" />
+<link rel="stylesheet" href="/css/<?=$tpl?>.css" type="text/css" />
+</head>
+<body onload="initIndex()">
+	<div class="mainMenu">
+		<div class="preloader" id="preloader"></div>
+		<ul class="menu"> 
+		<li class="menuItem"><a href="/check/add.html">+СОЗДАТЬ ЧЕК</a></li>
+		<li class="menuItem"><a href="#">Чеки</a><ul class="subMenu">
+			<li><a href="/viewChecks/currentMonth.html">За текущий месяц</a></li>
+			<li><a href="/viewChecks/lastMonth.html">За прошлый месяц</a></li>
+			<li><a href="/viewChecks/currentYear.html">За текущий год</a></li>
+			<li><a href="#">За произвольную дату</a></li>
+			<li><a href="/viewChecks.html">ВСЕ!</a></li>
+		</ul></li>
+		<li class="menuItem"><a href="#">Магазины</a></li>
+		<li class="menuItem"><a href="/categories.html">Категории</a></li>
+		<li class="menuItem"><a href="/products.html">Продукты</a></li>
+		<li class="userMenu" title="<?=$USER->getLogin()?>"><div></div></li>
+		<li class="date">Сегодня:<?php echo date('d.m.Y, ').$dayWeek[date("w")];?></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="content">
+			<? include $modPath.$tpl.".php" ?>
+		</div>
+		<div class="stat" id="stats">
+		</div>
+	</div>
+	<?=$errorText?>
+</body>
+</html>

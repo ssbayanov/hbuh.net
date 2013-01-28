@@ -1,0 +1,48 @@
+div.categoryClose div.item{
+	display:none !important;
+}
+
+div.categoryOpen div.item{
+	display:block;
+}
+
+
+
+div.categoryOpen span.chkBx:before,
+div.categoryClose span.chkBx:before{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 15px;
+	height: 15px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: -1px;
+}
+
+div.categoryOpen span.chkBx:before{
+	content: "‒";
+}
+
+div.categoryClose span.chkBx:before{
+	content: "+";
+}
+
+div.categoryOpen:hover, div.categoryClose:hover {
+	cursor: pointer;
+	background-color: #aaf !important;
+}
+
+div.categoryOpen, div.categoryClose {
+
+}
+
+span.chkBx{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #FFF;
+}

@@ -1,0 +1,69 @@
+<NotepadPlus>
+    <Project name="hbuh">
+        <Folder name="hbuh">
+            <Folder name="ajax">
+                <File name="ajax\addPosition.php" />
+                <File name="ajax\editChecks.php" />
+                <File name="ajax\getChecks.php" />
+                <File name="ajax\nameXML.php" />
+                <File name="ajax\stats.php" />
+            </Folder>
+            <Folder name="css">
+                <File name="css\404.css" />
+                <File name="css\addCheck.css" />
+                <File name="css\main.css" />
+                <File name="css\user.css" />
+                <File name="css\viewCheck.css" />
+                <File name="css\viewChecks.css" />
+            </Folder>
+            <Folder name="images">
+                <File name="images\add_event.gif" />
+                <File name="images\clear.png" />
+                <File name="images\clear1.png" />
+                <File name="images\delete.png" />
+                <File name="images\down.png" />
+                <File name="images\down_failure.png" />
+                <File name="images\hpreloader.gif" />
+                <File name="images\hpreloader2.gif" />
+                <File name="images\preload.gif" />
+                <File name="images\preloader.gif" />
+                <File name="images\up.png" />
+                <File name="images\up_failure.png" />
+                <File name="images\user-2.png" />
+                <File name="images\user.png" />
+                <File name="images\user3.png" />
+            </Folder>
+            <Folder name="includes">
+                <File name="includes\mysqlDB.php" />
+                <File name="includes\user.php" />
+                <File name="includes\xml.php" />
+            </Folder>
+            <Folder name="modules">
+                <File name="modules\404.php" />
+                <File name="modules\addCheck.php" />
+                <File name="modules\reinstall.php" />
+                <File name="modules\user.php" />
+                <File name="modules\viewCheck.php" />
+                <File name="modules\viewChecks.php" />
+            </Folder>
+            <Folder name="scripts">
+                <File name="scripts\addCheck.js" />
+                <File name="scripts\addCheckAjax.js" />
+                <File name="scripts\dTable.js" />
+                <File name="scripts\formatNum.js" />
+                <File name="scripts\main.js" />
+                <File name="scripts\viewChecks.js" />
+                <File name="scripts\viewChecksAjax.js" />
+            </Folder>
+            <Folder name="template">
+                <File name="template\index.html" />
+            </Folder>
+            <File name=".htaccess" />
+            <File name="check.php" />
+            <File name="config.php" />
+            <File name="Denwer3_Base_2012-09-16_a2.2.22_p5.3.13_m5.5.25_pma3.5.1_xdebug.exe" />
+            <File name="index.php" />
+            <File name="&#x044C;&#x0449;&#x0432;&#x0433;&#x0434;&#x0443;&#x044B;" />
+        </Folder>
+    </Project>
+</NotepadPlus>

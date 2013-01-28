@@ -1,0 +1,54 @@
+/*STYLES OF CHEKS*/
+table.cheks {}
+table.cheks th{text-align: center !important; background-color: #fff !important;}
+table.cheks td{/*border-bottom: 1px dotted black;*/padding-top: 5px;}
+table.cheks .cheksDirection{}
+table.cheks .cheksDate{ width: 130px; text-align: center; /*background-color: #eef;*/}
+table.cheks .cheksTotal{width: 150px; text-align: right; padding-right: 5px;}
+table.cheks .cheksLocation{width: 300px; text-align: left; padding-left: 5px;/*background-color: #eef;*/}
+table.cheks .cheksButtons{padding: 8px;}
+table.cheks tr.cheksButtonsHover{background-color: #ccf !important;}
+table.cheks tr {cursor: pointer;}
+
+span.arrow {
+	border-style: solid dashed dashed;
+	border-color: transparent;
+	border-top-color: #444;
+	display: inline-block;
+	border-width: 6px 6px 0;
+	vertical-align: middle;
+	position: relative;
+	top: 5px;}
+	
+div.arrowConteiner {
+	background-color: #bbb;
+	width: 16px;
+	height: 16px;
+	vertical-align: bottom;
+	text-align: center;
+	border: 1px solid #444;
+	border-radius: 3px;
+	}
+.hidden{
+	visibility: hidden;}
+
+tr.cheksButtonsHover td.cheksButtons div.arrowConteiner {
+	visibility: visible;}
+	
+table.menuTable {
+	position: absolute;
+	display: none;
+	z-index: 101;
+	background-color: #eee;
+	border: 1px solid #aaa;
+	}
+
+table.menuTable td{
+	background-color: transperent;
+	cursor: pointer;}
+
+table.menuTable td:hover{
+	background-color: #ccf;}
+
+td.itemMenu{
+	padding: 5px;}

@@ -1,0 +1,28 @@
+DirectoryIndex index index.html index.php
+
+DirectorySlash off
+Options -Indexes -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.(css|jpg|gif|png|zip|rar|doc|xls|js|tif|tiff|docx|xlsx|ico)$|test\.php$
+	RewriteRule ^(.*)$ $1 [L,QSA]
+	
+# this makes secure loses
+RewriteCond %{REQUEST_URI} ajax/(.*)\.php$
+	RewriteRule ^(.*)$ $1 [L,QSA]
+	
+RewriteCond %{REQUEST_URI} !^(.+)\.(html|php)$
+    RewriteRule . %{REQUEST_URI}.html [R=301,L,QSA]
+
+RewriteRule ^viewChecks/(.*)\.(html|php)$ index.php?module=viewChecks&range=$1 [L,QSA]
+
+RewriteRule ^(.*)/(.*)/(.*)\.(html|php)$ index.php?module=$1&task=$2&id=$3 [L,QSA]
+
+RewriteRule ^(.*)/(.*)\.(html|php)$ index.php?module=$1&task=$2 [L,QSA]
+	
+RewriteRule ^(.*)\.(html|php)$ index.php?module=$1 [L,QSA]
+
+ErrorDocument 404 /index.php?module=404
+

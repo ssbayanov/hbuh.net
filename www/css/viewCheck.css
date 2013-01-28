@@ -1,0 +1,33 @@
+/*STYLES OF CHEK*/
+
+div.check{
+	font-family: Lucida Console; 
+	font-size: 14pt; 
+	border: 1px solid black; 
+	display: inline-block; 
+	width: auto; 
+	text-align: center;
+	padding-top: 10px;}
+	
+.quantity{
+	vertical-align: bottom; 
+	text-align: right; 
+	white-space: nowrap;
+	padding-top: 10px;}
+	
+.total{
+	vertical-align: bottom; 
+	padding-left: 10px; 
+	text-align: right; 
+	white-space: nowrap; 
+	padding-top: 10px;}
+
+div.total {padding-top: 15px;}
+span.dotted {
+	border-bottom: 2px dotted #000; 
+	display: block; 
+	width: 400px; 
+	min-width: 100px; 
+	text-align: left;}
+span.name {background-color: #fff; position: relative; bottom: -3px; text-align: left;}
+div.total {text-align: right; font-weight: bold;}

@@ -1,0 +1,140 @@
+
+/*STYLES OF ADDCHEKS*/
+	
+div.entryBox {padding: 10px 3px;}
+div.entryBox label {font-weight: bold;}
+div.entryBox .entryInput{display: block !important;}
+textarea#comments {width: 400px; height: 100px;}
+
+
+table.dTable td,
+table.dTable th{
+	border: 1px solid black; 
+	margin: 0px; 
+	font-weight: normal;
+	font-size: 10pt; }
+td.infoCell1, td.infoCell2,
+td.infoCell3, td.infoCell4, 
+td.infoCell5{
+	font-weight: normal;
+	font-size: 10pt;
+	text-align: right;
+	cursor: pointer; 
+	outline: 0px;}
+table.dTable td {height: 20px;}
+table.dTable th {height: 30px; vertical-align: middle; text-align: center;}
+th.headCell0{width:30px; text-align: center;}
+td.numericCell {text-align: center;}
+td.infoCell1{width:150px; 
+	max-width: 150px; 
+	max-height: 20px;
+	text-align: left; 
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;}
+th.headCell2{width:70px;}
+th.headCell3{width:120px;}
+th.headCell4{width:120px;}
+
+th.buttonCellHead, 
+td.buttonCell{
+	border: 0px solid white !important; 
+	padding: 0px;}
+td.buttonCell input.button{
+	max-height: 18px; 
+	padding: 0px 2px; 
+	vertical-align: middle; 
+	margin: 0px; 
+	visibility: hidden;}
+table.dTable tr:hover td.buttonCell input.button{visibility: visible;}
+
+table.tolTip td{border: 0px solid #000; padding: 3px;}
+table.tolTip tr:hover{border: 0px solid #000; background-color: #eef; cursor: pointer;}
+table.tolTip {width: 100%;}
+div.pBox {	z-index : 101;
+	position: absolute;
+	display: none;
+	border: 1px solid black;
+	width: 300px;
+	background-color: #fff;
+	padding: 0px;}
+	
+/*toltip styles*/
+#pBox {font-size: 10pt;}
+.tTRigth{text-align: right; width: 50px;}
+.tTLeft{text-align: left; width: 250px;}
+.tTSRigth{text-align: right; width: 230px;}
+.tTSLeft{text-align: left; width:70px; max-width: 70px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+#iBox{
+	border:2px solid #7cf; 
+	text-align: left; 
+	position: absolute; 
+	margin: 0px; 
+	z-index: 100;}
+	
+/*append product dialog*/
+div.productAddDialogContainer{
+	font-size: 10pt;}
+
+div.productAddDialogContainer label{
+	font-weight: bold;}	
+	
+div.categoryConteiner{
+	overflow-y: scroll;
+	max-height: 150px;
+	min-height: 150px;
+	background-color: #fff;
+	width: 100%;}
+	
+div.categoryItem{
+	
+}
+
+div.categoryItem:hover{
+	cursor: pointer;
+	background-color: #aaf;
+}
+
+
+div.selected{
+	background-color: #88f;
+}	
+
+input#categoryInput,  input#productInput{
+	width: 100%;
+}
+
+/*STYLES OF CHEK*/
+
+div.check{
+	font-family: Lucida Console; 
+	font-size: 14pt; 
+	border: 1px solid black; 
+	display: inline-block; 
+	width: auto; 
+	text-align: center;
+	padding-top: 10px;}
+	
+.quantity{
+	vertical-align: bottom; 
+	text-align: right; 
+	white-space: nowrap;
+	padding-top: 10px;}
+	
+.total{
+	vertical-align: bottom; 
+	padding-left: 10px; 
+	text-align: right; 
+	white-space: nowrap; 
+	padding-top: 10px;}
+
+div.total {padding-top: 15px;}
+span.dotted {
+	border-bottom: 2px dotted #000; 
+	display: block; 
+	width: 400px; 
+	min-width: 100px; 
+	text-align: left;}
+span.name {background-color: #fff; position: relative; bottom: -3px; text-align: left;}
+div.total {text-align: right; font-weight: bold;}

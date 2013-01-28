@@ -1,0 +1,210 @@
+/*GENERAL STYLES*/
+html{
+	min-height: 100%;}
+
+body {
+	min-height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, sans-serif;}
+table{
+	border-spacing: 0px; 
+	border-collapse: collapse;}
+
+input, select{font-family: Verdana, sans-serif;}
+
+div.preloader{
+	display: inline-block;
+	width:45px;
+	height: 35px;
+	visibility: hidden;
+	float: left;
+	background: url("../images/preloader.gif");
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+	font-size: 14pt;
+	padding-top: 10px;}
+
+div.errorBox,  div.messageBox{
+	border-width: 3px 0px; 
+	border-style: solid;
+	position: fixed; 
+	z-index: 110; 
+	top: 30px; 
+	display:none;
+	width: 100%;
+	padding: 0px 20px;
+	text-align: center;
+	vertical-align: middle;}
+	
+div.errorBox{
+	border-color: #f00; 
+	background-color: #faa;}
+	
+div.messageBox{
+	border-color: #55f; 
+	background-color: #ccf;}
+	
+div.mainMenu {
+	padding: 0px; 
+	margin: 0px;
+	background-color: #444; 
+	display: block;
+	width: 100%;
+	height: 45px;}
+	
+div.mainMenu ul.menu {
+	display: block;
+	margin: 0px;
+	}
+	
+ul.menu li.menuItem, li.date{
+	font-size: 16pt;
+	padding: 10px; 
+	float: left; 
+	display: block;
+	color: #bbb;}
+
+ul.menu li.menuItem:hover{
+	background-color: #CCC;
+	color: #bbb;}
+	
+li.menuItem a{
+	color: #bbb;}
+	
+li.menuItem:hover a{
+	color: #333;}
+
+li ul.subMenu{
+	visibility: hidden; 
+	position: absolute;
+	top: 45;
+	z-index: 115;
+}
+	
+li:hover ul.subMenu{
+	padding: 0px; 
+	visibility: visible;
+	background-color: #CCC;
+	position: absolute;
+	top: 45;
+	z-index: 115;
+	float: none;
+	list-style: none;
+	display: block;
+	
+	}
+li ul.subMenu li{
+	padding: 5px;}
+	
+li ul.subMenu li a{
+	color: #333;}
+	
+li ul.subMenu li:hover{
+	padding: 5px;
+	background-color: #888;}
+	
+
+
+li.date {
+	float: right;}
+	
+li.userMenu {
+	float: right;
+	padding: 2px;
+	display: inline-block;}
+	
+li.userMenu div{
+	background: url('/images/user.png'); 
+	width: 40px; 
+	height: 40px; 
+	display: inline-block;
+	cursor: pointer;
+	list-style: none;
+}
+
+div.stat{
+	height: 100%; 
+	width: 31%;
+	min-width: 200px;
+	text-align: center;
+	padding: 10px;
+	float: left;}
+	
+div.statDetail{
+	text-align: center;
+	padding: 10px;}
+	
+div.content {
+	padding: 10px;
+	width: 65%;	
+	float: left;
+	position: relative;
+}
+
+div.main {
+	margin: 0 auto;
+	padding: 0 35px;
+	padding-left: 60px;
+	min-width: 800px;
+	max-width: 1154px;
+	border: 0px solid red;
+	font-size: 100%;
+	font-style: normal;
+	vertical-align: baseline;
+	outline: 0;
+	overflow:auto;
+	height: 100%;}
+	
+div.header {
+	font-weight: bold;}
+	
+div.dialog{
+	position: fixed;
+	z-index: 199;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -175px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 15px 15px 0 15px;
+	max-width: 350px;
+	display: inline-block;}
+	
+div.okButton, div.cancelButton{
+	background-color: #e0e0e0;
+	border: 1px solid #cecece;
+	padding: 7px 15px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px;
+	text-align: center;
+	overflow: auto;
+	}
+
+div.okButton:hover, div.cancelButton:hover{
+	background-color: #aaa;
+}
+
+div.buttonConteiner {
+	text-align: center;
+	width: 100%;
+}
+
+div.blockBox{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	z-index: 199;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	opacity:0.2;
+	filter:alpha(opacity=20);
+	-moz-opacity:0.2;
+	display: none;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
