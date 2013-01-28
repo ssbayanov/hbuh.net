@@ -1,9 +1,9 @@
 <?php
 
 $HOST = localhost;
-$LOGIN = host1216811;
-$PASS = "66471403";
-$DBname = "host1216811_Joomla";
+$LOGIN = root;
+$PASS = "";
+$DBname = "hbuh";
 
 
 //Direcotries:
